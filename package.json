@@ -2,9 +2,11 @@
   "name": "vue-md-breakpoint",
   "version": "1.0.0",
   "description": "Material Design breakpoints for Vue",
-  "main": "breakpoint.js",
+  "main": "./dist/breakpoint.js",
   "scripts": {
-    "test": "test"
+    "test": "npm run build && jest dist",
+    "build": "babel src --presets babel-preset-es2015 --out-dir dist",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,15 @@
   "bugs": {
     "url": "https://github.com/cb109/vue-md-breakpoint/issues"
   },
-  "homepage": "https://github.com/cb109/vue-md-breakpoint#readme"
+  "homepage": "https://github.com/cb109/vue-md-breakpoint#readme",
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.13",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^22.4.3",
+    "vue": "^2.5.16"
+  },
+  "dependencies": {
+    "vue-template-compiler": "^2.5.16"
+  }
 }
