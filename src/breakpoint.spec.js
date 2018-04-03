@@ -1,7 +1,16 @@
-import VApp from '@/components/VApp';
-import { test } from '@/test';
+import Vue from 'vue';
+import { mount } from '@vue/test-utils';
 
-test('breakpoint.js', ({ mount }) => {
+import breakpoint from './breakpoint.js';
+
+const AppComponent = Vue.component('main-app', {
+  render: createElement => {
+    return createElement('div');
+  },
+  mixins: [breakpoint],
+});
+
+describe('breakpoint.js', () => {
   const scenarios = [
     {
       description: 'Huawei Smartwatch',
@@ -231,13 +240,13 @@ test('breakpoint.js', ({ mount }) => {
 
   scenarios.forEach(scenario => {
     it('should calculate breakpoint for ' + scenario.description, () => {
-      const wrapper = mount(VApp);
+      const wrapper = mount(AppComponent);
       wrapper.setData({
         clientWidth: scenario.width,
         clientHeight: scenario.height
       });
-      const breakpoint = wrapper.vm.breakpoint;
 
+      const breakpoint = wrapper.vm.$breakpoint;
       expect(breakpoint.width).toBe(scenario.width);
       expect(breakpoint.height).toBe(scenario.height);
       expect(breakpoint.name).toBe(scenario.name);
