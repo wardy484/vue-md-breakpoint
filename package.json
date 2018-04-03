@@ -1,0 +1,27 @@
+{
+  "name": "vue-md-breakpoint",
+  "version": "1.0.0",
+  "description": "Material Design breakpoints for Vue",
+  "main": "breakpoint.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cb109/vue-md-breakpoint.git"
+  },
+  "keywords": [
+    "vue",
+    "material",
+    "design",
+    "breakpoint",
+    "responsive",
+    "app"
+  ],
+  "author": "Christoph Buelter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cb109/vue-md-breakpoint/issues"
+  },
+  "homepage": "https://github.com/cb109/vue-md-breakpoint#readme"
+}
