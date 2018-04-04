@@ -12,7 +12,7 @@
  *
  * Use within a component:
  *
- *   import breakpoint from './breakpoint.js';
+ *   import breakpoint from 'vue-md-breakpoint.js';
  *
  *   export default {
  *     name: 'my-component',
@@ -33,8 +33,8 @@ var breakpoint = {
   computed: {
     $breakpoint() {
       const xs = this.clientWidth < 600;
-      const sm = this.clientWidth < 1024 && !xs;
-      const md = this.clientWidth < (1440 - 16) && !(sm || xs);
+      const sm = this.clientWidth < 960 && !xs;
+      const md = this.clientWidth < (1280 - 16) && !(sm || xs);
       const lg = this.clientWidth < (1920 - 16) && !(md || sm || xs);
       const xl = this.clientWidth >= (1920 - 16) && !(lg || md || sm || xs);
 
