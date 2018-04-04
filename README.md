@@ -3,6 +3,10 @@
 Access the current breakpoint from the material design spec inside a Vue app.
 Resizing the browser will update the breakpoint accordingly.
 
+## Demo
+
+[![Edit vue-md-breakpoint demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/n7nj0p76ml)
+
 ## Installation
 
     npm install vue-md-breakpoint
