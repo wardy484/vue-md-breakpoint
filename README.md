@@ -3,16 +3,20 @@
 Access the current breakpoint from the material design spec inside a Vue app.
 Resizing the browser will update the breakpoint accordingly.
 
+## Installation
+
+    npm install vue-md-breakpoint
+    # or:
+    yarn add vue-md-breakpoint
+
 ## Usage
 
-You can use it as a plugin or mixin for your app.
+You can use it as a mixin for your app.
 
     import Vue from 'vue';
     import breakpoint from 'vue-md-breakpoint';
 
-    Vue.use(breakpoint);
-
-    // or in your app/component:
+    // in your app/component:
 
     mixins: [breakpoint],
 
