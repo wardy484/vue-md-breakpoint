@@ -1,5 +1,5 @@
 {
-  "name": "vue-md-breakpoint",
+  "name": "@wardy484/vue-md-breakpoint",
   "version": "1.0.0",
   "description": "Material Design breakpoints for Vue",
   "main": "./dist/breakpoint.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/cb109/vue-md-breakpoint.git"
+    "url": "git+ssh://git@github.com/wardy484/vue-md-breakpoint"
   },
   "keywords": [
     "vue",
@@ -20,12 +20,12 @@
     "responsive",
     "app"
   ],
-  "author": "Christoph Buelter",
+  "author": "Kim Ward",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cb109/vue-md-breakpoint/issues"
+    "url": "https://github.com/wardy484/vue-md-breakpoint/issues"
   },
-  "homepage": "https://github.com/cb109/vue-md-breakpoint#readme",
+  "homepage": "https://github.com/wardy484/vue-md-breakpoint#readme",
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.13",
     "babel-cli": "^6.26.0",
